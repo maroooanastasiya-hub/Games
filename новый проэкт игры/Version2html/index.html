@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Правда или Действие</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .output {
+            min-height: 200px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #fafafa;
+            white-space: pre-wrap;
+        }
+        .input-area {
+            margin: 10px 0;
+        }
+        input, button {
+            padding: 8px;
+            margin: 5px;
+            font-size: 16px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .hidden {
+            display: none;
+        }
+        .leaderboard {
+            margin-top: 20px;
+        }
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #e0e0e0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Правда или Действие</h1>
+        <div id="output" class="output"></div>
+        <div id="navigation" class="navigation hidden">
+            <button id="prevBtn">← Назад</button>
+            <span id="roundIndicator">Раунд 1</span>
+            <button id="nextBtn">Вперёд →</button>
+        </div>
+        <div id="inputArea" class="input-area">
+            <input type="text" id="userInput" placeholder="Введите ответ...">
+            <button id="submitBtn">Отправить</button>
+        </div>
+        <div id="buttonArea" class="input-area hidden">
+            <button id="option1">Опция 1</button>
+            <button id="option2">Опция 2</button>
+            <button id="option3">Опция 3</button>
+        </div>
+        <div id="leaderboard" class="leaderboard hidden">
+            <h2>Таблица лидеров</h2>
+            <table id="leaderboardTable">
+                <thead>
+                    <tr>
+                        <th>Имя</th>
+                        <th>Очки</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="GameModel.js"></script>
+    <script src="GameView.js"></script>
+    <script src="GameController.js"></script>
+    <script src="Player.js"></script>
+    <script src="Question.js"></script>
+    <script src="Action.js"></script>
+    <script src="game.js"></script>
+</body>
+</html></content>
+<parameter name="filePath">/Users/Asya/Desktop/Elbrus/PHasa-1/2 неделя/новый проэкт игры/Version2html/index.html

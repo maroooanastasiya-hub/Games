@@ -1,0 +1,13 @@
+async function main() {
+  const model = await new GameModel().init();
+  const view = new GameView();
+  const controller = new GameController(model, view);
+
+  await controller.run();
+}
+
+window.onload = () => {
+  main().catch((error) => {
+    console.error('Ошибка выполнения игры:', error);
+  });
+};
